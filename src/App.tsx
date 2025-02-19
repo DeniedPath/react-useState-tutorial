@@ -1,15 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Counter from "./components/Counter";
 
-interface CounterProps {
-  count: number;
-  setCount: React.Dispatch<React.SetStateAction<number>>;
-}
-
-// Counter component implementation is imported from './components/Counter'
-
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
 
   return (
     <div>
